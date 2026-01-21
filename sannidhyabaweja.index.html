@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sannidhya Baweja | Digital Marketing Consultant</title>
+  <meta name="description" content="Digital Marketing Consultant with 5+ years experience. Helped small businesses scale revenue up to 7X with consulting and strategy." />
+
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --card:#121521;
+      --text:#e9eefc;
+      --muted:#aab3cf;
+      --brand:#6ee7ff;
+      --border:rgba(255,255,255,0.08);
+      --btn:#1d2437;
+    }
+
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #07080b);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none;}
+
+    .container{width:min(1100px, 92%); margin:0 auto;}
+
+    header{
+      position: sticky;
+      top:0;
+      z-index:99;
+      background: rgba(11,13,18,0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-weight:800;
+      letter-spacing:0.5px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .logo-badge{
+      width:34px;height:34px;
+      border-radius:10px;
+      background: linear-gradient(135deg, var(--brand), #7c3aed);
+      display:inline-block;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .menu a:hover{color:var(--text);}
+
+    .btn{
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: var(--btn);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      cursor:pointer;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      transition: 0.2s;
+      border-color: rgba(110,231,255,0.35);
+    }
+    .btn-primary{
+      background: linear-gradient(135deg, rgba(110,231,255,0.2), rgba(124,58,237,0.2));
+      border-color: rgba(110,231,255,0.35);
+    }
+
+    .card{
+      background: rgba(18,21,33,0.75);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    }
+
+    .hero{padding:56px 0 26px;}
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns: 1fr;}
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 14px;
+      background: rgba(255,255,255,0.03);
+    }
+
+    .hero h1{margin:0; font-size:38px; line-height:1.15;}
+    .hero p{margin:14px 0 0; color:var(--muted); line-height:1.6; font-size:15.5px;}
+
+    .hero-photo{
+      width:100%;
+      height:100%;
+      min-height: 340px;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+    }
+
+    section{padding: 22px 0;}
+    .section-title{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:14px;
+      flex-wrap:wrap;
+    }
+    .section-title h2{margin:0;font-size:22px;}
+    .section-title p{margin:0;color:var(--muted);font-size:14px;}
+
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media(max-width:900px){ .grid-2{grid-template-columns:1fr;} }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media(max-width:900px){ .grid-3{grid-template-columns: 1fr;} }
+
+    ul{padding-left:18px;}
+    li{color:var(--muted); line-height:1.7; font-size:14px; margin-bottom:6px;}
+
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      outline:none;
+      margin-top:8px;
+      font-size:14px;
+    }
+    textarea{min-height:110px; resize: vertical;}
+
+    .footer{
+      padding: 30px 0 40px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      margin-top: 26px;
+    }
+
+    .small{font-size:12px;color:var(--muted); margin-top:8px;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <span class="logo-badge"></span>
+          <span>Sannidhya Baweja</span>
+        </div>
+
+        <div class="menu">
+          <a href="#home">Home</a>
+          <a href="#consultation">Consultation</a>
+          <a href="#hire">Hire Me</a>
+          <a href="#ebook">eBook</a>
+          <a href="#course">Course</a>
+          <a href="#training">Training</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="btn btn-primary" href="#consultation">Book A Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="card">
+          <div class="tag">📈 Digital Marketing Consultant • Strategy + Execution</div>
+          <h1>Looking For A Digital Marketing Consultant?</h1>
+
+          <p>
+            We have been in the digital marketing industry for more than 5 years and have helped small businesses scale
+            their revenue 7 times by consulting and strategizing for them.
+          </p>
+
+          <p>
+            For the past 5 years, I have been achieving those goals for all my clients without fail.
+            The most updated knowledge of this industry, accompanied by the most diverse experience,
+            helps me build and execute an analytical strategy that hits the desired number with ease.
+          </p>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+            <a class="btn btn-primary" href="#consultation">📞 Book A Call</a>
+            <a class="btn" href="#hire">🤝 Hire Me</a>
+            <a class="btn" href="#course">🎓 View Courses</a>
+          </div>
+        </div>
+
+        <img class="hero-photo" src="images/profile-1.png" alt="Sannidhya working on laptop" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="consultation">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>Digital Marketer • Consultant • YouTuber • LinkedIn Creator</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <p style="margin:0;color:var(--muted);line-height:1.7;">
+            I am a Digital Marketer / Consultant / Youtuber / LinkedIn Content Creator and a lot more.
+            I am an executioner and a hardcore practitioner of the concepts that I suggest my clients to follow.
+          </p>
+
+          <p style="margin:12px 0 0;color:var(--muted);line-height:1.7;">
+            I have wide knowledge of various niches, that helps me develop a customised and super specific strategy for
+            any kind of business.
+          </p>
+
+          <p style="margin:12px 0 0;color:var(--muted);line-height:1.7;">
+            My main objective is to squeeze the revenue from the most apparent and non apparent platforms, resulting in
+            the bottom line you might have only imagined.
+          </p>
+        </div>
+
+        <div class="card" style="padding:0; overflow:hidden;">
+          <img class="hero-photo" style="border:none; border-radius:20px;" src="images/profile-2.png" alt="Sannidhya smiling portrait" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIRE ME -->
+  <section id="hire">
+    <div class="container">
+      <div class="section-title">
+        <h2>Hire Me</h2>
+        <p>360° marketing support + strategy + execution</p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0 0 10px;">Do you want to up your marketing game?</h3>
+        <p style="margin:0;color:var(--muted);line-height:1.7;">
+          Marketing seems very easy, until there is a bottom line revenue targets to hit.
+          If you want a 360° digital marketer for all your marketing needs then let’s get on a discovery call and identify
+          if we are a good fit for each other.
+        </p>
+
+        <ul>
+          <li>Performance Marketing + Ads Strategy</li>
+          <li>Revenue-focused funnels & offers</li>
+          <li>Analytics + tracking (so you don’t waste money)</li>
+          <li>Content strategy for YouTube / Instagram / LinkedIn</li>
+        </ul>
+
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+          <a class="btn btn-primary" href="#contact">✅ Book Discovery Call</a>
+          <a class="btn" href="#course">📚 Explore Courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE -->
+  <section id="course">
+    <div class="container">
+      <div class="section-title">
+        <h2>Courses</h2>
+        <p>Practical frameworks you can apply immediately</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-top:0;">Advanced Facebook Ads Course</h3>
+          <p style="color:var(--muted);line-height:1.7;">
+            Instead of wasting precious time, money, and energy on hundreds of mediocre courses, invest in a course built
+            on real execution.
+          </p>
+          <ul>
+            <li>Marketing vs Facebook Funnel</li>
+            <li>Ad Optimization for Target Audience and Timeline</li>
+            <li>How to Automate Reporting</li>
+            <li>How to Tackle Learning Limited + Privacy Updates</li>
+            <li>Real-life case studies & actionable techniques</li>
+            <li>Frameworks to help you scale up</li>
+            <li>Templates, tools & guides included</li>
+          </ul>
+          <a class="btn btn-primary" href="#">Get Your Course Here!</a>
+          <div class="small">*Add your course link in the button</div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Free Course: Grow Your YouTube Channel</h3>
+          <p style="color:var(--muted);line-height:1.7;">
+            Checkout the course and invest the money you were going to waste into a strategy that actually works.
+            Already taken by 1000+ students.
+          </p>
+          <ul>
+            <li>Best Audience Strategy</li>
+            <li>Detailed Keyword Targeting</li>
+            <li>Best Placement Strategy</li>
+            <li>Best Optimization Practices</li>
+            <li>Detailed Funnel Strategy</li>
+          </ul>
+          <a class="btn btn-primary" href="#">Get Free Course</a>
+          <div class="small">*Add your free course link in the button</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EBOOK -->
+  <section id="ebook">
+    <div class="container">
+      <div class="section-title">
+        <h2>eBook</h2>
+        <p>Short, actionable guides for quick wins</p>
+      </div>
+
+      <div class="card">
+        <p style="margin:0;color:var(--muted);line-height:1.7;">
+          Add your eBook details here (title, what it covers, who it is for). You can sell it or give it free as a lead magnet.
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+          <a class="btn btn-primary" href="#">📘 Get eBook</a>
+        </div>
+        <div class="small">*Add your eBook link in the button</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training">
+    <div class="container">
+      <div class="section-title">
+        <h2>Training</h2>
+        <p>Workshops, mentorship & hands-on learning</p>
+      </div>
+
+      <div class="card">
+        <p style="margin:0;color:var(--muted);line-height:1.7;">
+          Want structured learning and execution support? Training can include weekly calls, assignments, templates,
+          audits, and personalized strategy.
+        </p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+          <a class="btn btn-primary" href="#contact">📩 Enquire for Training</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <div class="section-title">
+        <h2>Blog</h2>
+        <p>Weekly strategies, techniques & insights</p>
+      </div>
+
+      <div class="card">
+        <p style="margin:0;color:var(--muted);line-height:1.7;">
+          Coming soon. You can later add blog posts for SEO and organic growth.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Let’s discuss your goals & strategy</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-top:0;">Get weekly strategies, techniques & offers.</h3>
+          <p style="color:var(--muted);line-height:1.7;">
+            Get digital marketing tips & tricks direct to your inbox.
+          </p>
+
+          <form>
+            <label>First Name</label>
+            <input type="text" placeholder="Your Name" />
+
+            <label style="display:block;margin-top:10px;">Email Address</label>
+            <input type="email" placeholder="you@email.com" />
+
+            <button class="btn btn-primary" type="button" style="margin-top:12px; width:100%; justify-content:center;">
+              Subscribe
+            </button>
+
+            <div class="small">
+              *To make this form actually work, connect it later using Google Forms or Formspree (both free).
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0;">Direct Contact</h3>
+          <p style="margin:0;color:var(--muted);line-height:1.7;">
+            Want to hire me or book a consultation call?
+          </p>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+            <a class="btn btn-primary" href="mailto:youremail@example.com">📧 Email Me</a>
+            <a class="btn" href="#">📱 WhatsApp Me</a>
+          </div>
+
+          <div class="small">
+            Replace email + WhatsApp link with your real details.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      © <span id="year"></span> Sannidhya Baweja • All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
